@@ -103,7 +103,7 @@ a.nav:hover {
 }
 
 #footer {
-	position: relative;
+	position: absolute;
 	bottom: 10%;
 	left: 0;
 	right: 0;
