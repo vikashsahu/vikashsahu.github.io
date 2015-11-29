@@ -1,12 +1,58 @@
 
+html {
+	height:100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: #2eb7b7;
+	min-width: 70%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	min-height:90%;
+	padding: 0 0 10px;
+	position: relative; 
+	min-width: 70%;
+}
+
+#container {
+	position: relative;
+	min-height: 90%;
+	max-height: 90%;
+}
+
+#header {
+	padding-top: 5%;
+}
+
+#content {
+
+}
+
+#footer {
+	position: absolute;
+	height: 10px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
 }
 
 h1.homepage{
 	font-family: 'Kaushan Script', cursive;
 	text-align: center;
 	margin-bottom: 0;
+	margin-top: 0;
 	font-size: 100px;
 }
 
@@ -34,12 +80,6 @@ p.nav {
 
 .social {
 	text-align: center;
-}
-
-.footer {
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 10px;
 }
 
 img.link {
@@ -94,17 +134,3 @@ a.nav:hover {
 	filter: opacity(1);
 }
 
-#header {
-
-}
-
-#content {
-
-}
-
-#footer {
-	position: absolute;
-	bottom: 10%;
-	left: 0;
-	right: 0;
-}
