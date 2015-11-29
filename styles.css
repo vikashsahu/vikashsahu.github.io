@@ -12,17 +12,24 @@ h1.homepage{
 
 p {
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
 
 p.main {
-	text-align: center;
+	text-align: left;
 	font-family: 'Montserrat', sans-serif;
+	display: block;
 }
 
 p.nav {
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 0;
+}
+
+.about {
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 .social {
@@ -96,7 +103,7 @@ a.nav:hover {
 }
 
 #footer {
-	position: fixed;
+	position: relative;
 	bottom: 10%;
 	left: 0;
 	right: 0;
