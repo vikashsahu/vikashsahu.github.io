@@ -1,0 +1,103 @@
+
+body {
+	background-color: #2eb7b7;
+}
+
+h1.homepage{
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 100px;
+}
+
+p {
+	text-align: center;
+}
+
+p.main {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p.nav {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0;
+}
+
+.social {
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+}
+
+img.link {
+	width: 32px;
+	height: 32px;
+	padding-left: 4px;
+	padding-right: 4px;
+	-webkit-filter: opacity(.5);
+	filter: opacity(.5);
+}
+
+img.link:hover {
+	-webkit-filter: opacity(1);
+	filter: opacity(1);
+}
+
+a.link {
+	color:black;
+	-webkit-filter: opacity(.5);
+	filter: opacity(.5);
+	text-decoration: none;
+}
+
+a.link:visited {
+	color:black;
+	-webkit-filter: opacity(.5);
+	filter: opacity(.5);
+}
+
+a.link:hover {
+	color:black;
+	-webkit-filter: opacity(1);
+	filter: opacity(1);
+}
+
+a.nav {
+	color:black;
+	-webkit-filter: opacity(.5);
+	filter: opacity(.5);
+	text-decoration: none;
+}
+
+a.nav:visited {
+	color:black;
+	-webkit-filter: opacity(.5);
+	filter: opacity(.5);
+}
+
+a.nav:hover {
+	color:black;
+	-webkit-filter: opacity(1);
+	filter: opacity(1);
+}
+
+#header {
+
+}
+
+#content {
+
+}
+
+#footer {
+	position: fixed;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+}
