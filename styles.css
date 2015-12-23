@@ -1,43 +1,22 @@
 
 html {
-	height:100%;
+	position: relative;
 	min-height: 100%;
-	margin: 0;
-	padding: 0;
 }
 
 body {
 	background-color: #2eb7b7;
 	min-width: 70%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-#wrapper {
-	min-height:90%;
-	padding: 0 0 10px;
-	position: relative; 
-	min-width: 70%;
-}
-
-#container {
-	position: relative;
-	min-height: 90%;
-	max-height: 90%;
+	margin: 0 0 50px;
 }
 
 #header {
 	padding-top: 5%;
 }
 
-#content {
-
-}
-
 #footer {
 	position: absolute;
-	height: 10px;
+	height: 50px;
 	width: 100%;
 	bottom: 0;
 	left: 0;
