@@ -128,3 +128,9 @@ a.nav:hover {
 	filter: opacity(1);
 }
 
+#map {
+	margin: auto;
+	width: 65%;
+	height: 700px;
+	padding: 10px;
+}
