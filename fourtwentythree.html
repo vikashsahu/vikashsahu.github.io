@@ -14,8 +14,26 @@
 	<div id="header-no-pad">
 		<h1 class="homepage">FourTwentyThree</h1>
 	</div>
+	<div id="projection">
+		<p id="sentence"></p>
+	</div>
 	<div id="map">
 	</div>
+	<script>
+		var am = 3369;
+		var pb = 2806; // todo: can we retrieve this programatically? scrape it?
+
+		var amName = "Anuva Maloo";
+		var pbName = "Peter Boyko";
+
+		// todo: tie logic
+		var winner = am > pb ? amName : pbName;
+		var loser = am > pb ? pbName : amName;
+
+		var conclusion = "Our current projection has " + winner + " winning the 2025 SMOB Election over " + loser + ".";
+		console.log(conclusion);
+		document.getElementById("sentence").textContent = conclusion;
+	</script>
 	<script>
 		// [geographical coordinates], zoom level
 		var map = L.map('map').setView([39.13638, -77.20424], 11); // lat, long of moco
