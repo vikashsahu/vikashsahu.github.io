@@ -24,6 +24,10 @@
 			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		}).addTo(map);
 
+		// playing around with markers and hover, eventually this will go off of a datafile
+		var blairMarker = L.marker([39.018056, -77.011389]).addTo(map)
+			.bindPopup('Montgomery Blair HS');
+
 		L.geoJson(countyData).addTo(map);
 	</script>
 </body>
