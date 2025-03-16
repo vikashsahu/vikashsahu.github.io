@@ -1,4 +1,4 @@
-var countyData = {
+var countyPolygonData = {
   "type":"FeatureCollection",
   "features":[
     {
