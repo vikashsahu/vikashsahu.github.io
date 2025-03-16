@@ -20,19 +20,24 @@
 	<div id="map">
 	</div>
 	<script>
-		var am = 3369;
-		var pb = 2806; // todo: can we retrieve this programatically? scrape it?
+		var amFollowerCount = 3369;
+		var pbFollowerCount = 2806; // todo: can we retrieve this programatically? scrape it?
 
 		var amName = "Anuva Maloo";
 		var pbName = "Peter Boyko";
 
-		// todo: tie logic
-		var winner = am > pb ? amName : pbName;
-		var loser = am > pb ? pbName : amName;
+		var amLink = "https://anuva4smob.com/";
+		var pbLink = "https://www.peterforsmob.com/";
 
-		var conclusion = "Our current projection has " + winner + " winning the 2025 SMOB Election over " + loser + ".";
-		console.log(conclusion);
-		document.getElementById("sentence").textContent = conclusion;
+		if (amFollowerCount == pbFollowerCount) { // a tie (unlikely)
+			document.getElementById("sentence").textContent = "Our current projection is a tie between candidates " + amName + " and " + pbName + ".";
+		} else {
+			var winner = amFollowerCount > pbFollowerCount ? amName : pbName;
+			var loser = amFollowerCount > pbFollowerCount ? pbName : amName;
+
+			var conclusion = "Our current projection has " + winner + " winning the 2025 SMOB Election over " + loser + ".";
+			document.getElementById("sentence").textContent = conclusion;
+		}
 	</script>
 	<script>
 		// [geographical coordinates], zoom level
