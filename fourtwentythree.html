@@ -53,7 +53,7 @@
 			// todo: change color of popup based on category.
 
 			L.marker([school.latitude, school.longitude]).addTo(map)
-				.bindPopup(school.school_name);
+				.bindPopup(school.school_name,{className: school.category == "HIGH SCHOOLS" ? 'hs-popup' : 'ms-popup'}); // can maybe use this to change styling of popup based on middle/high school
 		});
 
 		L.geoJson(countyPolygonData).addTo(map); //defined in external mocoPolygon.js file
