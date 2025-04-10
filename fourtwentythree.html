@@ -79,21 +79,10 @@
 		var legend = L.control({position: 'bottomleft'});
 		legend.onAdd = function(map) {
 			var div = L.DomUtil.create('div', 'legend');
-			//var labels = ['<strong>Categories</strong>'];
-			//var categories = ['High', 'Middle'];
-			//var categoryColors = {'High': '#2a81cb', 'Middle': '#2aad27'}; //retrieved from https://github.com/pointhi/leaflet-color-markers
-
+			// colors retrieved from https://github.com/pointhi/leaflet-color-markers
 			div.innerHTML += '<strong>Categories</strong><br>';
-			div.innerHTML += '<i style="background: #2a81cb"></i><span>High Schools</span><br>';
-			div.innerHTML += '<i style="background: #2aad27"></i><span>Middle Schools</span><br>';
-
-			/*for (var i=0; i<categories.length; i++) {
-				console.log(categories[i]);
-				console.log(categoryColors[categories[i]]);
-				div.innerHTML += labels.push(
-					'<i style="background:' + categoryColors[categories[i]] + '"></i>' + (categories[i] ? categories[i] : '+'));
-			}
-			div.innerHTML = labels.join('<br>');*/
+			div.innerHTML += '<i style="background: #2A81CB"></i><span>High Schools</span><br>';
+			div.innerHTML += '<i style="background: #2AAD27"></i><span>Middle Schools</span><br>';
 			return div;
 		};
 		legend.addTo(map);
