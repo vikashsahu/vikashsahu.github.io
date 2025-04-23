@@ -21,8 +21,8 @@
 	<div id="map">
 	</div>
 	<script>
-		var amFollowerCount = 5751;
-		var pbFollowerCount = 5725; // todo: can we retrieve this programatically? scrape it?
+		var amFollowerCount = 5915;
+		var pbFollowerCount = 5849; // todo: can we retrieve this programatically? scrape it?
 
 		var amName = "Anuva Maloo";
 		var pbName = "Peter Boyko";
@@ -36,15 +36,23 @@
 		var tieSentence = "Our current projection is a tie between candidates " + pbBlock + " and " + amBlock + "."; //todo: randomly choose one of them
 		var winnerSentence = "Our current projection has <strong id='winner'></strong> winning the 2025 SMOB Election over <strong id='loser'></strong>";
 
+		var electionDay = true; //set on 4/23/2025
+
 		if (amFollowerCount == pbFollowerCount) { // a tie (unlikely)
 			document.getElementById("sentence").innerHTML = "Our current projection is a tie between candidates " + amBlock + " and " + pbBlock + ".";
 		} else {
 			var winner = amFollowerCount > pbFollowerCount ? amBlock : pbBlock;
 			var loser = amFollowerCount > pbFollowerCount ? pbBlock : amBlock;
 
-			document.getElementById("sentence").innerHTML = winnerSentence;
+			if (electionDay) {
+				var finalSentence = "Our final projection was a win for <strong id='winner'></strong> in the 2025 SMOB Election over <strong id='loser'></strong>";				
+				document.getElementById("sentence").innerHTML = finalSentence;
+			} else {
+				document.getElementById("sentence").innerHTML = winnerSentence;
+			}
+			 
 			document.getElementById("winner").innerHTML = winner;
-			document.getElementById("loser").innerHTML = loser;
+			document.getElementById("loser").innerHTML = loser;	
 		}
 	</script>
 	<script>
